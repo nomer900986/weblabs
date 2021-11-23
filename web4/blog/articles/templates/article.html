@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>{{post.title}}</title>
+    <link rel="stylesheet" href="{{ STATIC_URL }}/static/css/article.css">
+  </head>
+  <body >
+    <div class="archive">
+        <div class="article-border">
+            <p>
+                <div class="archive-header">
+                    <img class= "atricle-image" src="{{ STATIC_URL }}/static/logo.jpg"/>
+                </div>
+                <a class="link" href="{{STATIC_URL}}/">Все статьи</a>
+            </p>
+        </div>
+        <div class="post">
+            <h1 class="post-title">{{post.title}}</h1>
+            <div class="article-info">
+                <h2>
+                    <div class="article-author">{{post.author.username}}</div>
+                </h2>
+            <div class="article-created-data">{{post.created_date}}</div>
+            <p class="article-text">{{post.text}}</p>
+        </div>
+    </div>
+  </body>
+</html>
