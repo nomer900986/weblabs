@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Регистрация</title>
+    <link rel="stylesheet" href="{{ STATIC_URL }}/static/css/reg_and_auth.css"/>
+  </head>
+  <body>
+    <div class="content">
+      <h1>Регистрация</h1>
+      <form method="POST">
+        {% csrf_token %}
+        <input
+          type="text"
+          name="username"
+          placeholder="Имя пользователя"
+          value="{{ form.title }}"
+        />
+        <input
+          type="text"
+          name="email"
+          placeholder="email пользователя"
+          value="{{ form.title }}"
+        />
+        <input
+          type="password"
+          name="password"
+          placeholder="Пароль"
+          value="{{ form.title }}"
+        />
+        <input type="submit" value="Сохранить" />
+      </form>
+      {{ form.errors }}
+    </div>
+  </body>
+</html>

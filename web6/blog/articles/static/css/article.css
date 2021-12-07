@@ -1,0 +1,97 @@
+body{
+    background: #1abc9c;
+    font-family: Tahoma, Arial, sans-serif;
+    color: #ffffff
+}
+img {
+    display: block;
+    width: 250px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.archive {
+    width: 960px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.post-title a {
+    color: #ffffff;
+}
+.article-author {
+    width: 50%;
+    float: left;
+}
+.article-created-date {
+    text-align: right;
+}
+.article-image{
+    display: block;
+    align-items: flex-start;
+    width: 250px;
+    margin-left: 0;
+}
+.link {
+    color: white;
+    font-weight: bold;
+    position: absolute;
+    right: 470px;
+    top: 180px;
+}
+.article-border p{
+    text-align: right;
+}
+.article-text{
+    width: 960px;
+    text-align: justify;
+}
+.article-created-data{
+    text-align: right;
+}
+.content{
+    text-align: center;
+    padding-top: 70px;
+}
+input[name="title"]{
+    padding: 5px;
+    margin-bottom: 10px;
+    border: 1px solid #888;
+    outline: none;
+    -moz-appearance: none;
+    width: 200px;
+    text-align: center;
+    border-radius: 40px;
+}
+textarea[name="text"]{
+   padding: 25px;
+    margin-bottom: 10px;
+    border: 1px solid #888;
+    outline: none;
+    -moz-appearance: none;
+    width: 650px;
+    height: 350px;
+    resize: none;
+    border-radius: 40px;
+    scrollbar-width: thin;
+}
+.create{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.save_button{
+    padding: 10px;
+    width: 150px;
+    background-color: white;
+    border: none;
+    border-radius: 40px;
+    color: #1abc9c;
+    font-weight: bold;
+    letter-spacing: 0.06em;
+    margin-top: 10px;
+}
+.save_button:hover{
+    color: white;
+    background-color: #1abc9c;
+    box-shadow: 1px 1px 10px 10px;
+    transition-duration: 0.3s;
+}
